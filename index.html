@@ -82,6 +82,8 @@
                     const data = docSnap.data();
                     const statusValue = data.Status || data.status || "غير محدد";
                     const locationValue = data.Location || data.location || "غير محدد";
+const timeValue = data.Time || data.time || "غير محدد";
+document.getElementById("time").innerText = timeValue;
 
                     document.getElementById("status").innerText = statusValue;
                     document.getElementById("location").innerText = locationValue;
